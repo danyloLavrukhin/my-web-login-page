@@ -1,0 +1,131 @@
+.wrapper{
+    padding: 0px 20px 20px 0px;
+    padding: 0;
+    margin: 0;
+    background-image: url(img/background.jpg);
+    /* background: repeat; */
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.section-container {
+    padding: 40px 20px 40px 20px;
+    width: 30%;
+    height: 55%;
+    background: transparent;
+    border: 3px solid rgba(88, 238, 88, 0.673);
+}
+
+
+
+.main-information h1{
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+
+.email-form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.email-form input{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 50px;
+    width: 90%;
+    /* background: transparent; */
+}
+
+.email-form>input::placeholder{
+    font-size: 15px;
+}
+.password-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.password-form input{
+    background: transparent;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+.password-form input::placeholder{
+    font-size: 14px;
+}
+
+.button-container button{
+    height: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.last-text{
+    color: rgb(0, 0, 0);
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-text a:active{
+    color: black;
+}
+
+.last-text a{
+    margin-left: 10px;
+    color: blue;
+}
+
+@media (width < 1000px) {
+    .section-container {
+        width: 60%;
+    }
+
+    .email-form input{
+        font-size: 16px;
+    }
+
+    .password-form input{
+        font-size: 16px;
+    }
+    
+}
+
+@media (width < 500px) {
+    .section-container {
+        width: 80%;
+    }
+}
+
+@media (height > 800px ) {
+    .section-container{
+        height: 50%;
+    }
+}
+
+@media (height > 1000px) {
+    .section-container{
+        height: 40%;
+    }
+}
